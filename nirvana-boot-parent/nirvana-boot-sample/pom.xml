@@ -9,7 +9,7 @@
 
     <artifactId>nirvana-boot-sample</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
 
     <name>nirvana-boot-sample</name>
     <url>http://maven.apache.org</url>
