@@ -7,11 +7,11 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>nirvana-boot-sample</artifactId>
+    <artifactId>nirvana-boot-user</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>nirvana-boot-sample</name>
+    <name>nirvana-boot-user</name>
     <url>http://maven.apache.org</url>
 
     <properties>
@@ -19,11 +19,15 @@
     </properties>
 
     <dependencies>
+        <!-- 引入SpringMVC和Tomcat -->
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>3.8.1</version>
-            <scope>test</scope>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.nirvana.boot</groupId>
+            <artifactId>nirvana-boot-user-skeleton</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
 </project>
