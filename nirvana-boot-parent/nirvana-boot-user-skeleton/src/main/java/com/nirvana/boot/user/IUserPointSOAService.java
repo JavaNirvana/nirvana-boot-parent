@@ -1,8 +1,12 @@
 package com.nirvana.boot.user;
 
 import com.nirvana.boot.common.base.ServiceResponse;
-import com.nirvana.boot.user.request.UserPointReq;
+import com.nirvana.boot.user.request.PlusUserPointReq;
+import com.nirvana.boot.user.request.QueryUserPointReq;
+import com.nirvana.boot.user.response.PlusUserPointResp;
 import com.nirvana.boot.user.response.UserPointResp;
+
+import java.util.List;
 
 /**
  * 用户积分SOA服务.
@@ -18,5 +22,12 @@ public interface IUserPointSOAService {
      * @param req
      * @return
      */
-    public ServiceResponse<UserPointResp> querySingleUserPoint(UserPointReq req);
+    public ServiceResponse<List<UserPointResp>> queryUserPoint(QueryUserPointReq req);
+
+    /**
+     * 增加用户积分
+     * @param req
+     * @return
+     */
+    public ServiceResponse<PlusUserPointResp> plusUserPoint(PlusUserPointReq req);
 }

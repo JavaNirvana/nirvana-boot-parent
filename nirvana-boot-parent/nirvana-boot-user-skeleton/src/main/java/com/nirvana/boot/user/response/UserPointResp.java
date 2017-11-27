@@ -8,4 +8,5 @@ package com.nirvana.boot.user.response;
  * @date 2017/11/24 16:21
  */
 public class UserPointResp {
+
 }

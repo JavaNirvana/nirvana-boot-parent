@@ -1,5 +1,7 @@
 package com.nirvana.boot.common.exception;
 
+import com.nirvana.boot.common.enums.IEnum;
+
 import java.io.Serializable;
 
 /**
@@ -27,6 +29,11 @@ public class ParameterInvalidException extends RuntimeException implements Seria
     public ParameterInvalidException(String errorCode, String cause) {
         super(cause);
         this.errorCode = errorCode;
+    }
+
+    public ParameterInvalidException(IEnum enums) {
+        super(enums.getValue());
+        this.errorCode = enums.getKey();
     }
 
     public String getErrorCode() {
