@@ -20,7 +20,11 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!-- java版本兼容策略，最好指定java版本 -->
         <java.version>1.7</java.version>
+        <nirvana.boot.version>1.0-SNAPSHOT</nirvana.boot.version>
+
         <common.lang.version>3.4</common.lang.version>
+        <slf4j-api.version>1.7.2</slf4j-api.version>
+        <slf4j-log4j12.version>1.7.2</slf4j-log4j12.version>
     </properties>
 
     <!--
@@ -56,6 +60,32 @@
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
                 <version>${common.lang.version}</version>
+            </dependency>
+
+            <!-- nirvana-boot-common -->
+            <dependency>
+                <groupId>com.nirvana.boot</groupId>
+                <artifactId>nirvana-boot-common</artifactId>
+                <version>${nirvana.boot.version}</version>
+            </dependency>
+
+            <!-- nirvana-boot-user-skeleton -->
+            <dependency>
+                <groupId>com.nirvana.boot</groupId>
+                <artifactId>nirvana-boot-user-skeleton</artifactId>
+                <version>${nirvana.boot.version}</version>
+            </dependency>
+
+            <!--slf4j-api -->
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${slf4j-api.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-log4j12</artifactId>
+                <version>${slf4j-log4j12.version}</version>
             </dependency>
 
             <!-- 引入测试的支持 -->
